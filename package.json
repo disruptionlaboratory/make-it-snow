@@ -1,0 +1,23 @@
+{
+  "name": "make-it-snow",
+  "version": "1.0.0",
+  "description": "Adding some festive cheer to a website by making it snow",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd src && http-server -c-1 -p 8181 && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/disruptionlaboratory/make-it-snow.git"
+  },
+  "author": "alatham@disruptionlaboratory.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/disruptionlaboratory/make-it-snow/issues"
+  },
+  "homepage": "https://github.com/disruptionlaboratory/make-it-snow#readme",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "prettier": "2.8.1"
+  }
+}
