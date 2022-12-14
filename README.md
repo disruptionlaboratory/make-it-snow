@@ -39,6 +39,27 @@ sizes.forEach((size) => {
 });
 ```
 
+While the idea of making it snow sounds like fun, it can get old very quickly.  
+
+So remember to wrap up the code in a conditional statement so that it only appears for a limited period.  
+
+As I'm a Gen X-er, I think in terms of days, but for the Millenials and Gen Zs, you might prefer to think in hours and seconds.
+
+And unless you're a contractor, you don't want to be doing deployments before and after.
+
+```js
+import makeItSnow from "./make-it-snow.js";
+
+const present = new Date();
+if (present.getMonth() === 11 && present.getDate() > 23 && present.getDate() < 27) {
+    const sizes = [25, 50, 100];
+
+    sizes.forEach((size) => {
+        makeItSnow({ numberOfSnowflakes: 20, width: size, zIndex: 75 });
+    });
+ }
+```
+
 
 ![index.html](screenshot.png)
 
