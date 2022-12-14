@@ -78,7 +78,7 @@ const makeItSnow = ({
           snowflakes[i].x = window.innerWidth;
         }
 
-        if (directionBias < -1) {
+        if (directionBias < 0) {
           snowflakes[i].x +=
             xMovementLeft[Math.floor(Math.random() * xMovementLeft.length)] *
             step;
